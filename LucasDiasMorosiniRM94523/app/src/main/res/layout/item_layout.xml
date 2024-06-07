@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="40dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/amarelon"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/NomePraia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/marrom"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        tools:text="Praia da lagoa"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/marrom"
+        android:textAllCaps="true"
+        android:id="@+id/Estado"
+        tools:text="São Paulo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/marrom"
+        android:id="@+id/Cidade"
+        tools:text="Sorocaba"/>
+
+    <Button
+        android:id="@+id/Excluir"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="@color/backlaranja"
+        android:textColor="@color/marrom"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/baseline_delete_24"
+        android:text="Excluir"/>
+
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amarelin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="50dp"
+        android:textStyle="italic"
+        android:background="@color/backlaranja"
+        android:textColor="@color/marrom"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="textEnd"
+        android:paddingEnd="10dp"
+        android:drawableLeft="@drawable/baseline_beach_access_24"
+        android:text="YouPraias"/>
+
+    <EditText
+        android:id="@+id/AddPraia"
+        android:layout_width="185dp"
+        android:layout_height="59dp"
+        android:hint="Nome da praia"
+        android:paddingStart="10dp"/>
+
+    <EditText
+        android:id="@+id/AddEstado"
+        android:layout_width="185dp"
+        android:layout_height="59dp"
+        android:paddingStart="10dp"
+        android:hint="Estado"/>
+
+    <EditText
+        android:id="@+id/AddCidade"
+        android:layout_width="185dp"
+        android:layout_height="59dp"
+        android:paddingStart="10dp"
+        android:hint="Cidade"/>
+
+    <Button
+        android:id="@+id/incluir"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/amarelon"
+        android:textColor="@color/marrom"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Incluir"/>
+
+    <Button
+        android:id="@+id/buttonIntegrantes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/amarelin"
+        android:drawableStart="@drawable/baseline_arrow_forward_24"
+        android:padding="0dp"
+        android:text="Integrantes"
+        android:textColor="@color/marrom"
+        android:textSize="10dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="7dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+</LinearLayout>
